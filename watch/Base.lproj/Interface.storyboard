@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="esy-Cm-Y0h">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Timer-->
+        <scene sceneID="YKV-1d-gfO">
+            <objects>
+                <controller identifier="Timer" hidesWhenLoading="NO" id="esy-Cm-Y0h" customClass="TimerInterfaceController" customModule="watch_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="VTR-Ix-XiJ">
+                            <items>
+                                <imageView width="37" alignment="left" id="ZbH-KM-ex7"/>
+                                <label alignment="left" text="Label" id="suB-wI-olM"/>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="1" right="1" top="6" bottom="0.0"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="suB-wI-olM" id="5Qv-KY-QAn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="186" y="334"/>
+        </scene>
+    </scenes>
+</document>
