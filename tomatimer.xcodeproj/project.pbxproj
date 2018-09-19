@@ -18,8 +18,9 @@
 		F096820C2152B61500D88BAD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F096820B2152B61500D88BAD /* ExtensionDelegate.swift */; };
 		F096820E2152B61500D88BAD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F096820D2152B61500D88BAD /* NotificationController.swift */; };
 		F09682102152B61500D88BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F096820F2152B61500D88BAD /* Assets.xcassets */; };
-		F09682152152B61500D88BAD /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F09681F82152B61400D88BAD /* watch.app */; };
+		F09682152152B61500D88BAD /* watchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F09681F82152B61400D88BAD /* watchApp.app */; };
 		F096821F2152B7D900D88BAD /* TimerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F096821E2152B7D900D88BAD /* TimerInterfaceController.swift */; };
+		F09682212152EDED00D88BAD /* watch in Resources */ = {isa = PBXBuildFile; fileRef = F09682202152EDED00D88BAD /* watch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				F09682152152B61500D88BAD /* watch.app in Embed Watch Content */,
+				F09682152152B61500D88BAD /* watchApp.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,7 +73,7 @@
 		F09681EB21519B0B00D88BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F09681EE21519B0B00D88BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F09681F021519B0B00D88BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F09681F82152B61400D88BAD /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09681F82152B61400D88BAD /* watchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09681FB2152B61400D88BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		F09681FD2152B61400D88BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F09681FF2152B61400D88BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		F09682112152B61500D88BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F09682122152B61500D88BAD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		F096821E2152B7D900D88BAD /* TimerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInterfaceController.swift; sourceTree = "<group>"; };
+		F09682202152EDED00D88BAD /* watch */ = {isa = PBXFileReference; lastKnownFileType = folder; name = watch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				F09681E121519B0A00D88BAD /* tomatimer.app */,
-				F09681F82152B61400D88BAD /* watch.app */,
+				F09681F82152B61400D88BAD /* watchApp.app */,
 				F09682042152B61500D88BAD /* watch Extension.appex */,
 			);
 			name = Products;
@@ -141,6 +143,7 @@
 			children = (
 				F09681FA2152B61400D88BAD /* Interface.storyboard */,
 				F09681FD2152B61400D88BAD /* Assets.xcassets */,
+				F09682202152EDED00D88BAD /* watch */,
 				F09681FF2152B61400D88BAD /* Info.plist */,
 			);
 			path = watch;
@@ -181,9 +184,9 @@
 			productReference = F09681E121519B0A00D88BAD /* tomatimer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F09681F72152B61400D88BAD /* watch */ = {
+		F09681F72152B61400D88BAD /* watchApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F096821A2152B61500D88BAD /* Build configuration list for PBXNativeTarget "watch" */;
+			buildConfigurationList = F096821A2152B61500D88BAD /* Build configuration list for PBXNativeTarget "watchApp" */;
 			buildPhases = (
 				F09681F62152B61400D88BAD /* Resources */,
 				F09682192152B61500D88BAD /* Embed App Extensions */,
@@ -193,9 +196,9 @@
 			dependencies = (
 				F09682072152B61500D88BAD /* PBXTargetDependency */,
 			);
-			name = watch;
+			name = watchApp;
 			productName = watch;
-			productReference = F09681F82152B61400D88BAD /* watch.app */;
+			productReference = F09681F82152B61400D88BAD /* watchApp.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		F09682032152B61500D88BAD /* watch Extension */ = {
@@ -250,7 +253,7 @@
 			projectRoot = "";
 			targets = (
 				F09681E021519B0A00D88BAD /* tomatimer */,
-				F09681F72152B61400D88BAD /* watch */,
+				F09681F72152B61400D88BAD /* watchApp */,
 				F09682032152B61500D88BAD /* watch Extension */,
 			);
 		};
@@ -271,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09682212152EDED00D88BAD /* watch in Resources */,
 				F09681FE2152B61400D88BAD /* Assets.xcassets in Resources */,
 				F09681FC2152B61400D88BAD /* Interface.storyboard in Resources */,
 			);
@@ -316,7 +320,7 @@
 		};
 		F09682142152B61500D88BAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F09681F72152B61400D88BAD /* watch */;
+			target = F09681F72152B61400D88BAD /* watchApp */;
 			targetProxy = F09682132152B61500D88BAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -613,7 +617,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F096821A2152B61500D88BAD /* Build configuration list for PBXNativeTarget "watch" */ = {
+		F096821A2152B61500D88BAD /* Build configuration list for PBXNativeTarget "watchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F096821B2152B61500D88BAD /* Debug */,

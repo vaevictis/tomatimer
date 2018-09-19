@@ -13,16 +13,47 @@
             <objects>
                 <controller identifier="Timer" hidesWhenLoading="NO" id="esy-Cm-Y0h" customClass="TimerInterfaceController" customModule="watch_Extension">
                     <items>
-                        <group width="1" alignment="left" id="VTR-Ix-XiJ">
+                        <group width="1" height="40" alignment="left" id="VTR-Ix-XiJ">
                             <items>
-                                <imageView width="37" alignment="left" id="ZbH-KM-ex7"/>
-                                <label alignment="left" text="Label" id="suB-wI-olM"/>
+                                <imageView width="37" alignment="left" image="tomato" id="ZbH-KM-ex7"/>
+                                <label alignment="left" text="tomat" id="suB-wI-olM">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="zXK-4P-J6s">
+                            <items>
+                                <label alignment="left" text="00" id="AuK-MA-UGt"/>
+                                <label alignment="left" text="00" id="tyq-4B-3T5"/>
+                                <label alignment="left" text="00" id="AEt-DW-KFB"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="5HZ-It-FTQ">
+                            <items>
+                                <button width="1" alignment="left" title="Start" id="tNz-uq-kR0">
+                                    <connections>
+                                        <action selector="wStartStop" destination="esy-Cm-Y0h" id="1CL-hA-KVi"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Neb-cK-8to">
+                            <items>
+                                <button width="1" alignment="left" title="Reset" id="6aU-IO-rqn">
+                                    <connections>
+                                        <action selector="wStartStop" destination="esy-Cm-Y0h" id="HrJ-jm-nUE"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
                     <edgeInsets key="margins" left="1" right="1" top="6" bottom="0.0"/>
                     <connections>
-                        <outlet property="timerLabel" destination="suB-wI-olM" id="5Qv-KY-QAn"/>
+                        <outlet property="wMillisecondsLabel" destination="AEt-DW-KFB" id="6XB-P8-qGE"/>
+                        <outlet property="wMinutesLabel" destination="AuK-MA-UGt" id="AWC-HO-dNI"/>
+                        <outlet property="wResetBtn" destination="6aU-IO-rqn" id="GMG-Ax-KDH"/>
+                        <outlet property="wSecondsLabel" destination="tyq-4B-3T5" id="Lfu-XV-bgT"/>
+                        <outlet property="wStartBtn" destination="tNz-uq-kR0" id="Jxf-Se-8dA"/>
                     </connections>
                 </controller>
             </objects>
